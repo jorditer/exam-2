@@ -38,15 +38,15 @@ int	main(int argc, char *argv[])
 		number = atoi(argv[1]);
 		if (number == 1)
 			printf("1");
-		while (number >= ++i)
+		while (number >= ++i) // number
 		{
-			if (number % i == 0)
+			if (number % i == 0) // divisible
 			{
 				printf("%d", i);
-				if (number == i)
+				if (number == i) // stops refactoring, but after "i" is printed
 					break ;
 				printf("*");
-				number /= i;
+				number /= i; // divides by the factor
 				i = 1;
 			}
 		}
